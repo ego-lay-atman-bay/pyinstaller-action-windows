@@ -19,9 +19,9 @@ WORKDIR=${SRCDIR:-/src}
 
 SPEC_FILE=${4:-*.spec}
 
-python -m pip install --upgrade pip wheel setuptools
+apt install git-all
 
-sudo apt install git-all
+python -m pip install --upgrade pip wheel setuptools
 
 #
 # In case the user specified a custom URL for PYPI, then use
