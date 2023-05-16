@@ -19,7 +19,7 @@ WORKDIR=${SRCDIR:-/src}
 
 SPEC_FILE=${4:-*.spec}
 
-apt install git-all
+apt install git-all -y
 
 python -m pip install --upgrade pip wheel setuptools
 
